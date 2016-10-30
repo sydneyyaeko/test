@@ -202,3 +202,39 @@ and all second and third child files will have 7px left margins ==*/
 	letter-spacing: 0.1px;
 	font-size: 14px;
 }
+
+/*==================================================
+	Media Queries 
+==================================================*/
+
+/** This below is going to insure that the page will
+adjust to the size of the screen **/
+
+/** The search box will start to shrink down with the page
+when the screen gets to 635px wide **/
+@media(max-width: 635px){
+	.search-box input {
+		width: 75%; 
+	}
+}
+
+/** This makes the bottom site links all line up nicely without
+overlapping **/
+@media(max-width: 400px){
+	.bottom-site-links {
+    bottom: 0 !important;
+    position: absolute;
+    width: 100%;
+    background-color: #f2f2f2;
+    border-top: 1px solid #e4e4e4;
+    font-size: 10px;
+	}
+}
+
+/** This makes the nav bar content line up nicely without overlapping **/
+@media(max-width: 422px){
+	.top-navigation {
+    float: right;
+    margin-right: 3px;
+	}
+}
